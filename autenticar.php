@@ -1,26 +1,4 @@
-<?php
-// autenticar.php verifica se o e-mail e senha informados estão corretos!
-// conceito deles são: session_start, SELECT no MySQL, password_verify!
 
-// Aqui inicia a sessão do usúario.
-// A Sessão permite guardar os dados do usúario logado entre as paginas!
-
-// Inclui a conexão com banco de dados.
-include("conexão.php");
-
-// Recebe o email e a senha digitando no formulário de login 
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-
-//===========================================================
-// CONSULTA NO BANCO (READ DO CRUD)
-// Busca o usúario pelo email informado
-//============================================================
-
-// Montando a consulta SQL SELECT
-$sql = "SELECT * FROM usuarios WHERE email = '$email'";
-
-//Executa a consulta e guarda o resultado.
 <?php
 // autenticar.php verificar se o email e senha informados estão corretos!
 // Conceito deles são: session_start, SELECT no MySQL, password_verify!
